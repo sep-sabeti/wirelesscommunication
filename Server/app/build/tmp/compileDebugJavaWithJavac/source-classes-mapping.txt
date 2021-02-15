@@ -1,0 +1,10 @@
+com/example/server/MainActivity.java
+ com.example.server.MainActivity
+ com.example.server.MainActivity$1
+ com.example.server.MainActivity$2
+ com.example.server.MainActivity$3
+ com.example.server.MainActivity$ReceiveData
+ com.example.server.MainActivity$SendData
+ com.example.server.MainActivity$Server
+com/example/server/BuildConfig.java
+ com.example.server.BuildConfig

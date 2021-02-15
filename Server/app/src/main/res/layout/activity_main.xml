@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/recievedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/reset"
+        app:layout_constraintStart_toEndOf="@+id/status"
+        app:layout_constraintTop_toBottomOf="@+id/reset" />
+
+    <EditText
+        android:id="@+id/sendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write your text here!"
+        app:layout_constraintEnd_toEndOf="@+id/network"
+        app:layout_constraintStart_toStartOf="@+id/communicate"
+        app:layout_constraintTop_toBottomOf="@+id/network" />
+
+    <Button
+        android:id="@+id/communicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:text="Communicate"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/sendText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="Network"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <Button
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        app:layout_constraintStart_toStartOf="@+id/communicate"
+        app:layout_constraintTop_toBottomOf="@+id/portNumber" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/status"
+        app:layout_constraintEnd_toEndOf="@+id/network"
+        app:layout_constraintTop_toBottomOf="@+id/portNumber" />
+
+    <EditText
+        android:id="@+id/portNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="8883"
+        app:layout_constraintEnd_toEndOf="@+id/sendText"
+        app:layout_constraintStart_toStartOf="@+id/sendText"
+        app:layout_constraintTop_toBottomOf="@+id/sendText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
